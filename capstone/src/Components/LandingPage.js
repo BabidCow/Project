@@ -5,6 +5,7 @@ function LandingPage() {
     <h2>Chicago</h2>
     <p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br></br>
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br></br></p>
+    <button className="reserve">Reserve a table</button>
     <img src="restauranfood.jpg" height="500px" width="380" alt="food"/>
     </div>
     )
