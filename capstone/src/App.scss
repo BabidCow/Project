@@ -137,10 +137,17 @@ h2 {
 }
 
 .wrapper {
+  padding-top: 20px;
+  height: 500px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
   gap: 4rem;
   justify-content: center;
+}
+@media only screen and (max-width: 1138px) {
+  .wrapper {
+    height: fit-content;
+  }
 }
 
 .card {
@@ -166,6 +173,49 @@ h2 {
   }
 
   &__description{
+    padding:0 1rem;
+  }
+
+  &__btn{
+    padding: 1rem;
+    font-family: "capstone/public/fonts/MarkaziText-VariableFont_wght.ttf";
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1.5rem;
+    padding: 1rem;
+    width: 80%;
+    border: 2px solid #495e57;
+    border-radius: 16pt;
+    color: #495e57;
+    background-color: #F4CE14;
+    cursor: pointer;
+  }
+}
+
+.card2 {
+  overflow: hidden;
+  box-shadow: 0 4px 25px gray;
+  border: solid black 3px;
+  border-radius: 16pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 200ms ease-in;
+  height: 250px;
+
+  &__image{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    padding-left: 40%;
+  }
+
+  &__reviewer{
+    text-align: center;
+    font-size: 18pt;
+  }
+
+  &__quote{
     padding:0 1rem;
   }
 
