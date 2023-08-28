@@ -12,12 +12,12 @@ function Nav() {
         <header>
             <img src="Logo.svg" alt="logo" />
             <nav ref={navRef}>
-                <a>Home</a>
-                <a>About</a>
-                <a>Menu</a>
-                <a>Reservations</a>
-                <a>Order online</a>
-                <a>Login</a>
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Menu</a>
+                <a href="/booking">Reservations</a>
+                <a href="/">Order online</a>
+                <a href="/">Login</a>
                 <button className="nav-btn nav-close-btn" onClick={showNav}>
                     <FaTimes/>
                 </button>

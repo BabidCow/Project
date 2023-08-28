@@ -1,3 +1,5 @@
+
+
 header {
   display: flex;
   align-items: center;
@@ -78,24 +80,24 @@ header .nav-btn{
   }
 }
 h1 {
-  font-family: "capstone/public/fonts/MarkaziText-VariableFont_wght.ttf";
+  font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size: 40pt;
-  color: #495e57;
+  color: #F4CE14;
 }
 
 h2 {
-  font-family: "capstone/public/fonts/MarkaziText-VariableFont_wght.ttf";
+  font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size: 35pt;
-  color: #495e57;
+  color: #F4CE14;
 }
 
 .reserve{
   height: 40px;
-  width: 200px;
-  background-color: #495e57;
-  color: #F4CE14;
+  width:75%;
+  background-color: #F4CE14;
+  color: #495e57;
   font-family:'capstone/public/fonts/Karla-VariableFont_wght.ttf','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   border-radius: 16pt;
@@ -103,15 +105,10 @@ h2 {
 }
 
 .reserve:hover{
-  height: 40px;
-  width: 200px;
-  background-color: #F4CE14;
-  color: #495e57;
-  font-family:'capstone/public/fonts/Karla-VariableFont_wght.ttf','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: bold;
-  border-radius: 16pt;
-  border: solid black 3px;
+  background-color: #495e57;
+  color: #F4CE14;
   cursor: pointer;
+  border: solid #F4CE14 3px;
 }
 
 .main {
@@ -126,7 +123,7 @@ h2 {
 
 .landing {
   padding-left: 15%;
-  background-color: bisque;
+  background-color: #495e57;
   font-size: 16pt;
   font-family:'capstone/public/fonts/Karla-VariableFont_wght.ttf','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
@@ -138,7 +135,7 @@ h2 {
 
 .wrapper {
   padding-top: 20px;
-  height: 500px;
+  height:600px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
   gap: 4rem;
@@ -168,6 +165,7 @@ h2 {
   }
 
   &__title{
+    color: #495e57;
     text-align: center;
     font-size: 18pt;
   }
@@ -211,6 +209,7 @@ h2 {
   }
 
   &__reviewer{
+    color: #495e57;
     text-align: center;
     font-size: 18pt;
   }
@@ -237,4 +236,101 @@ h2 {
 
 .card:hover{
   transform: scale(1.02);
+}
+
+.card__btn:hover{
+  background-color: #495e57;
+  color: #F4CE14;
+}
+
+form{
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 16pt;
+  font-family:'capstone/public/fonts/Karla-VariableFont_wght.ttf','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+}
+
+fieldset{
+  border: #495e57 solid 2pt;
+}
+
+fieldset > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5pt;
+  padding-bottom: 10pt;
+}
+
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+.optional {
+  font-weight: lighter;
+  opacity: 50%;
+  font-style: italic;
+}
+
+input {
+  border-radius: 16pt;
+  border: #495e57 solid 3pt;
+  text-align: center;
+}
+
+select {
+  border-radius: 16pt;
+  border: #495e57 solid 2pt;
+}
+
+label {
+  font-size: larger;
+}
+
+.submitBtn {
+  height: 40px;
+  width:75%;
+  background-color: #F4CE14;
+  color: #495e57;
+  font-family:'capstone/public/fonts/Karla-VariableFont_wght.ttf','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  border-radius: 16pt;
+  border: solid black 3px;
+  cursor: pointer;
+}
+
+.submitBtn:hover{
+  color: #F4CE14;
+  background-color: #495e57;
+}
+
+.confirm {
+  text-align: center;
+}
+
+.container {
+  background-color: #495e57;
+  width: 100%;
+  display: table;
+}
+
+.column {
+  text-align: center;
+  display: table-cell;
+}
+
+.column > ul {
+  list-style: none;
+}
+
+ul a {
+  margin: 0 2rem;
+  color: black;
+  text-decoration: none;
 }
